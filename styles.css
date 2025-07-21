@@ -106,126 +106,6 @@ main {
   box-sizing: border-box;
   margin-bottom: 2rem;
 }
-.info-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 1.2rem;
-  max-width: 1100px;
-  margin: 2rem auto 1.5rem auto;
-  padding: 0 1rem;
-}
-.about-section, .info-section {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 24px rgba(16,44,23,0.07);
-  padding: 1.1rem 1.4rem 1rem 1.4rem;
-}
-.about-section h2, .info-section h2 {
-  color: #128c4b;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 0.6rem;
-  font-size: 1.2rem;
-}
-.hours-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 1rem;
-}
-.hours-list li {
-  margin-bottom: 0.2em;
-}
-.product-gallery {
-  max-width: 1100px;
-  margin: 2rem auto 0 auto;
-  padding: 0 1rem;
-}
-.product-gallery h2 {
-  color: var(--dark-green);
-  margin-bottom: 1.2rem;
-  text-align: center;
-  font-size: 1.4rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.015em;
-}
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.2rem 1rem;
-  justify-items: center;
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto 1.5rem auto;
-}
-.product.card {
-  background: var(--glass);
-  backdrop-filter: blur(8px);
-  border-radius: 16px;
-  box-shadow: var(--shadow);
-  padding: 1em 0.5em 1em 0.5em;
-  text-align: center;
-  width: 100%;
-  max-width: 320px;
-  min-height: 260px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  transition: transform 0.2s, box-shadow 0.22s;
-  position: relative;
-  overflow: hidden;
-  opacity: 1;
-  transform: none;
-}
-.product.card:not(.in-view) {
-  opacity: 0;
-  transform: translateY(28px) scale(0.98);
-}
-.product.card a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  flex: 1;
-  width: 100%;
-  height: 100%;
-}
-.product.card img {
-  width: 100%;
-  height: 170px;
-  max-width: 260px;
-  border-radius: 12px;
-  object-fit: cover;
-  border: 2.5px solid var(--accent-green);
-  box-shadow: 0 3px 18px rgba(23,153,58,0.11);
-  margin-bottom: 0.5rem;
-  margin-top: 0.2rem;
-  transition: border 0.22s, transform 0.22s;
-  background: #f4f4f4;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.product.card:hover img {
-  border: 2.5px solid #fff;
-  transform: scale(1.07) rotate(-2deg);
-  box-shadow: 0 8px 24px rgba(23,153,58,0.15);
-}
-.product.card span {
-  display: block;
-  margin-top: 0.1rem;
-  font-size: 1.18rem;
-  font-weight: 700;
-  color: var(--dark-green);
-  letter-spacing: 0.01em;
-  font-family: 'Montserrat', sans-serif;
-  transition: color 0.18s;
-}
-.product.card:hover span {
-  color: var(--accent-green);
-}
-/* Contact Buttons */
 .contact-cta {
   display: flex;
   justify-content: center;
@@ -281,7 +161,129 @@ main {
   background: #1bab53;
   transform: scale(1.04);
 }
-/* Social */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.2rem;
+  max-width: 1100px;
+  margin: 2rem auto 1.5rem auto;
+  padding: 0 1rem;
+}
+.about-section, .info-section {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 24px rgba(16,44,23,0.07);
+  padding: 1.1rem 1.4rem 1rem 1.4rem;
+}
+.about-section h2, .info-section h2 {
+  color: #128c4b;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+.hours-list li {
+  margin-bottom: 0.2em;
+}
+.product-gallery {
+  max-width: 1100px;
+  margin: 2rem auto 0 auto;
+  padding: 0 1rem;
+}
+.product-gallery h2 {
+  color: var(--dark-green);
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.2rem 1rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 1.5rem auto;
+}
+.product.card {
+  background: var(--glass);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.2s, box-shadow 0.22s;
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  transform: none;
+  margin: 0 auto 1.2rem auto;
+}
+.product.card:not(.in-view) {
+  opacity: 0;
+  transform: translateY(28px) scale(0.98);
+}
+.product.card a {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-decoration: none;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+.img-box {
+  width: 100%;
+  height: 210px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  background: #f4f4f4;
+}
+.product.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  display: block;
+}
+.product.card:hover img {
+  filter: brightness(0.96) saturate(1.05);
+}
+.product.card span {
+  display: block;
+  margin: 0.7rem 0 0.3rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark-green);
+  letter-spacing: 0.01em;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.18s;
+  text-align: center;
+  background: none;
+}
+.product.card:hover span {
+  color: var(--accent-green);
+}
+/* Social section with app colors */
 .social-section {
   background: #fff;
   margin: 2.2rem auto 1.2rem auto;
@@ -303,13 +305,32 @@ main {
   margin-top: 0.6rem;
   justify-content: center;
 }
-.social-icons img {
+.social-icons a img[alt="Facebook"] { filter: none; background: none; }
+.social-icons a img[alt="Instagram"] { filter: none; background: none; }
+.social-icons a img[alt="X"] { filter: none; background: none; }
+.social-icons a img[alt="LinkedIn"] { filter: none; background: none; }
+.social-icons a img[alt="Developer"] { filter: none; background: none; }
+.social-icons a:hover img {
+  transform: scale(1.15);
+  filter: brightness(1.1);
+}
+.dev-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.7rem;
+}
+.dev-icon a {
+  display: inline-block;
   transition: transform 0.18s;
 }
-.social-icons img:hover {
+.dev-icon a:hover img {
   transform: scale(1.15);
+  filter: brightness(1.1);
 }
-/* Loading spinner styles */
+.dev-icon img {
+  width: 32px;
+  height: 32px;
+}
 #loading-spinner {
   position: fixed;
   inset: 0;
@@ -331,32 +352,6 @@ main {
   0% { transform: rotate(0); }
   100% { transform: rotate(360deg); }
 }
-/* Floating WhatsApp */
-.floating-whatsapp {
-  position: fixed;
-  right: 18px;
-  bottom: 20px;
-  z-index: 100;
-  box-shadow: 0 4px 20px rgba(33,122,35,0.18);
-  border-radius: 50%;
-  background: #25d366;
-  padding: 0.12rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: pulse 2s infinite;
-  transition: transform 0.2s;
-}
-.floating-whatsapp:hover {
-  transform: scale(1.11);
-  animation: none;
-}
-.floating-whatsapp img {
-  width: 40px;
-  height: 40px;
-  display: block;
-}
-/* Footer */
 footer {
   background: var(--dark-green);
   color: #fff;
@@ -365,7 +360,6 @@ footer {
   font-size: 1rem;
   margin-top: 1.5rem;
 }
-/* Animations */
 @keyframes fadein {
   0% { opacity: 0;}
   100% { opacity: 1;}
@@ -404,8 +398,20 @@ footer {
 .slide-in.in-view {
   transform: translateY(0) scale(1);
 }
-
-/* --- Responsive: Make logo, name logo, and product images larger on phones and make product images fill card area --- */
+@media (max-width: 800px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    max-width: 99vw;
+  }
+  .product.card {
+    max-width: 99vw;
+    min-height: 160px;
+  }
+  .img-box {
+    height: 140px;
+  }
+}
 @media (max-width: 600px) {
   .logo {
     width: 90px;
@@ -416,40 +422,22 @@ footer {
     margin-bottom: 1rem;
   }
   .product.card {
-    min-height: 200px;
-    max-width: 96vw;
-    padding: 0.7em 0.2em 0.7em 0.2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    min-height: 150px;
+    max-width: 99vw;
+    border-radius: 14px;
   }
-  .product.card a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .img-box {
+    height: 120px;
+    border-radius: 14px 14px 0 0;
   }
   .product.card img {
-    width: 100%;
-    height: 140px;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 0.5rem;
-    margin-top: 0.2rem;
-    background: #f4f4f4;
-    display: block;
+    border-radius: 14px 14px 0 0;
   }
   .product.card span {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-top: 0.1rem;
-    margin-bottom: 0.3rem;
+    font-size: 1.15rem;
+    margin: 0.45rem 0 0.3rem 0;
   }
 }
-
 @media (max-width: 400px) {
   .logo {
     width: 70px;
@@ -458,12 +446,15 @@ footer {
   .brand-name {
     width: 150px;
   }
-  .product.card img {
-    height: 110px;
-    max-width: 140px;
+  .img-box {
+    height: 80px;
+    border-radius: 10px 10px 0 0;
   }
   .product.card {
-    min-height: 120px;
-    padding: 0.5em 0.1em 0.5em 0.1em;
+    min-height: 90px;
+    border-radius: 10px;
+  }
+  .product.card img {
+    border-radius: 10px 10px 0 0;
   }
 }
