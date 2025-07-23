@@ -331,27 +331,31 @@ main {
   width: 32px;
   height: 32px;
 }
-#loading-spinner {
-  position: fixed;
-  inset: 0;
-  background: rgba(255,255,255,0.85);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.spinner {
-  border: 6px solid #e9faf0;
-  border-top: 6px solid #128c4b;
-  border-radius: 50%;
-  width: 54px;
-  height: 54px;
-  animation: spin 1s linear infinite;
-}
-@keyframes spin {
-  0% { transform: rotate(0); }
-  100% { transform: rotate(360deg); }
-}
+  #loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #fff5f0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .meat-spinner {
+    font-size: 60px;
+    animation: rotateMeat 1s linear infinite;
+  }
+
+  .loading-text {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #c0392b;
+  }
+
+  @keyframes rotateMeat {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 footer {
   background: var(--dark-green);
   color: #fff;
